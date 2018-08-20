@@ -1,0 +1,39 @@
+{
+  "name": "bills-system",
+  "version": "1.0.0",
+  "description": "A bills-system made to learn RESTful concepts",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js --exec babel-node",
+    "build": "babel index.js -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christianmlima/bills-system.git"
+  },
+  "keywords": [
+    "nodejs",
+    "rest"
+  ],
+  "author": "Christian Lima",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christianmlima/bills-system/issues"
+  },
+  "homepage": "https://github.com/christianmlima/bills-system#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "nodemon": "^1.18.3"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.9",
+    "morgan": "^1.9.0"
+  }
+}
