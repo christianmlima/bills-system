@@ -1,10 +1,9 @@
-import Bill from './../schema/Bill'
+import Category from './../schema/Category'
 
 export default (req, res) => {
-    Bill.find({})
-        .populate('category')
-        .then((bills) => {
-            if(!bills || !bills.length){
+    Category.find({})
+        .then((categories) => {
+            if(!categories || !categories.length){
                 return res.status(404)
                           .json({
                               status: false,
@@ -15,7 +14,7 @@ export default (req, res) => {
             return res.status(200)
                   .json({
                       status: true,
-                      data: bills
+                      data: categories
                   })
         })
         .catch(err => res.status(500)
